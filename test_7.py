@@ -17,8 +17,8 @@ def row_gen(types):
 
 
 def csv_gen(N, header: dict):
-    assert N < 10 ** 9, 'Много строк'
-    assert header != dict()
+    assert N <= 10 ** 9, 'Много строк'
+    assert header != dict(), "Заголовок должен быть"
     with open('data.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(header.keys())
