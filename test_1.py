@@ -1,4 +1,7 @@
-def duplicate_nums(nums):
+from typing import List
+
+
+def duplicate_nums(nums: List[int]):
     count = {}
     for num in nums:
         count[num] = num not in count
