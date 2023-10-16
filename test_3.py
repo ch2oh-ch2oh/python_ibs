@@ -1,7 +1,7 @@
 from typing import List
 
 
-def duplicate_words(words: List[str]):
+def find_in_different_registers(words: List[str]):
     count = {}
     hasDup = {}
     for word in words:
